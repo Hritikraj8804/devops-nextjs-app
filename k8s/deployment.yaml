@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nextjs-app
-          image: ghcr.io/hritikraj8804/devops-nextjs-app:v4
+          image: ghcr.io/hritikraj8804/devops-nextjs-app:latest
           ports:
             - containerPort: 3000
           resources:
