@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nextjs-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nextjs-app
@@ -15,29 +15,14 @@ spec:
         app: nextjs-app
     spec:
       containers:
-      - name: nextjs-app
-        image: ghcr.io/your-username/devops-nextjs-app:latest
-        ports:
-        - containerPort: 3000
-        env:
-        - name: NODE_ENV
-          value: "production"
-        resources:
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
-          limits:
-            memory: "256Mi"
-            cpu: "200m"
-        livenessProbe:
-          httpGet:
-            path: /api/health
-            port: 3000
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /api/health
-            port: 3000
-          initialDelaySeconds: 5
-          periodSeconds: 5
+        - name: nextjs-app
+          image: ghcr.io/hritikraj8804/devops-nextjs-app:v4
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "200m"
