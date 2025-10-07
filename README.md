@@ -30,16 +30,16 @@ kubectl get services
 ![pods](https://github.com/user-attachments/assets/486e3264-28e9-4e83-9819-e03d9344705c)
 
 
-![Uploading succesTerminal.jpg…]()
+![succesTerminal](https://github.com/user-attachments/assets/0741d7be-5e09-418a-99a8-f47c0d76e01f)
 
 
+![succesNextApp](https://github.com/user-attachments/assets/ac2dd326-df1f-4d4c-8a5a-beda37c8e4c4)
 
-![Uploading succesNextApp.jpg…]()
 
 Access the app at `http://localhost:30080`
 
 ## Features
-- Multi-stage Docker build with security best practices
+- Docker build with security best practices
 - Automated CI/CD with GitHub Actions
 - Kubernetes deployment with health checks
 - Container registry integration (GHCR)
