@@ -2,6 +2,9 @@
 
 A containerized Next.js application with an automated CI/CD pipeline and Kubernetes deployment using GitHub Actions and GitHub Container Registry (GHCR).
 
+<img width="1024" height="1024" alt="Gemini_Generated_Image_ozdxtpozdxtpozdx" src="https://github.com/user-attachments/assets/dd2e9315-6e97-4861-8e48-da00e46a298d" />
+
+
 ## Features 🌟
 
 * **Next.js Application**
@@ -127,13 +130,21 @@ To deploy the application to Kubernetes, follow these steps:
    kubectl get pods
    ```
 
+   ![succesTerminal](https://github.com/user-attachments/assets/defd107d-bac0-437e-83fe-b12588a15184)
+
+
+   ![pods](https://github.com/user-attachments/assets/c5323d0d-af93-493b-9275-14d8827ab269)
+
+
 3. Port-forward the pod to access the application locally:
 
    ```bash
    kubectl port-forward <pod-name> 3000:3000
    ```
-
+   
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app running on Kubernetes.
+
+![succesNextApp](https://github.com/user-attachments/assets/3b1bc5b0-cd8d-47ea-98b6-7a8d61fd6b94)
 
 ### 8. Health Checks
 
@@ -174,4 +185,3 @@ The GitHub Actions workflow file can be found under `.github/workflows/ci-cd.yml
 Feel free to fork this repository, make changes, and submit pull requests. Contributions are always welcome!
 
 
----
